@@ -190,7 +190,7 @@ html {
   margin-left: 1rem;
 }
 
-.row {
+.footer__row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -499,6 +499,75 @@ html {
     display: none;
   }
 }
+.category__container {
+  max-width: 170rem;
+  margin: auto;
+}
+
+.category__mid {
+  background: #fff;
+  padding-left: 1rem 0;
+}
+.category__mid__ul {
+  list-style: none;
+}
+.category__mid__col {
+  width: 25%;
+  padding: 0 1.5rem;
+  margin-bottom: 10rem;
+}
+.category__mid__h4 {
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+.category__mid__h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  background-color: #d46f09;
+  height: 0.2rem;
+  box-sizing: border-box;
+  width: 5rem;
+}
+.category__mid__ul > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.category__mid__ul > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.category__mid__ul > li > a {
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
+  color: #757474;
+  display: block;
+  transition: all 0.3s ease;
+}
+.category__mid__ul > li > a:hover {
+  color: rgb(198, 21, 21);
+  margin-left: 1rem;
+}
+
+.category__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 60rem) {
+  .category__mid__col {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+  }
+}
 .thirdSection__figureWrapper {
   display: flex;
   align-items: center;
@@ -672,6 +741,7 @@ html {
   flex-shrink: 1;
   flex-grow: 1;
   margin: 5rem;
+  padding: 3.2rem;
 }
 
 .collectionsListItem > img {
@@ -682,7 +752,7 @@ html {
 
 .collectionsListItem > h2 {
   padding-top: 3rem;
-  padding-left: 7rem;
+  padding-left: 4.2rem;
 }
 
 @media only screen and (max-width: 60rem) {
