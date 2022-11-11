@@ -1,0 +1,224 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.thirdSection {
+    
+    &__figureWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 6.4rem;
+        position: relative;
+        max-height: 50vh;
+        padding: 2.4rem ;
+       
+    }
+
+    &__itemWrapper {
+        font-weight: 500;
+        line-height: 1.4;
+        font-size: 1.6rem;
+        color: #1c1d1f;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    &__icon {
+        
+        font-size: 3rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        @include mixins.flexCenter;
+    }
+
+    &__textWrapper {
+        height: 30rem;
+        width: 28.8rem;
+        @include mixins.flexCenter;
+        padding: 2rem;
+        border-radius: 2rem;
+        color: #f5f6f8;
+        font-size: 3rem;
+        background-size: cover;
+        font-family: map-get(variables.$fontVars, 'Fredoka One');
+    }
+}
+.thirdSection__infoText{
+    
+    width: 50rem;
+    height: 5rem ;
+    margin-top: 10rem;
+    padding-left: 8rem;
+    font-size: 4rem;
+}
+.thirdSection__itemWrapper1 {
+    height: 30rem;
+    width: 28.8rem;
+    box-shadow: 0 0 5rem 4rem #313131b0;
+    border-radius: 2rem;
+    background-image: url(/img/ezgif.com-gif-maker\ \(5\).webp);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+.thirdSection__itemWrapper1:hover{
+    transform: scale(1.2);
+}
+
+.thirdSection__itemWrapper2 {
+    height: 30rem;
+    width: 28.8rem;
+    box-shadow: 0 0 5rem 4rem #da4b0e90;
+    border-radius: 2rem;
+    background-image: url(/img/ezgif.com-gif-maker\ \(2\).webp);
+    background-size: cover;
+    transition: 1s;
+}
+.thirdSection__itemWrapper2:hover{
+    transform: scale(1.2);
+}
+
+.thirdSection__itemWrapper3 {
+    height: 30rem;
+    width: 28.8rem;
+    box-shadow: 0 0 4rem 4rem #b85dceb0;
+    border-radius: 2rem;
+    background-image: url(/img/ezgif.com-gif-maker\ \(3\).webp);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+.thirdSection__itemWrapper3:hover{
+    transform: scale(1.2);
+}
+.thirdSection__itemWrapper4 {
+    height: 30rem;
+    width: 28.8rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem 4rem  #ab030387;
+    background-image: url(/img/ezgif.com-gif-maker\ \(6\).webp);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+.thirdSection__itemWrapper4:hover{
+    transform: scale(1.2);
+}
+.thirdSection__itemWrapper5 {
+    height: 30rem;
+    width: 28.8rem;
+    box-shadow: 0 0 5rem 4rem #784a049c;
+    border-radius: 2rem;
+    background-image: url(/img/tomb.webp);
+    background-size: cover;
+    background-position: center;
+    font-weight: 500;
+    transition: 1s;
+}
+.thirdSection__itemWrapper5:hover{
+    transform: scale(1.2);
+}
+.stars {
+    color: gold;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 7rem;
+}
+.stars > h1{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 3.9rem;
+}
+
+.fourthSection{
+    width: 100%;
+    max-width: 135rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    
+}
+.fourthSection__homeText{
+    font-size: 5rem;
+    padding-top: 15rem;
+    margin-left: 9rem;
+    font-weight: 500;
+}
+
+
+.collections{
+    width: 100%;
+    padding: 3rem;
+}
+
+.collectionsList{
+    list-style:none;
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.collectionsListItem{
+    width: 15rem;
+    height: 20rem;
+    background-size: cover;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 5rem;
+}
+.collectionsListItem > img{
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+.collectionsListItem > h2 {
+    padding-top: 3rem;
+    padding-left: 7rem;
+    
+}
+@media only screen and (max-width: 60rem) {
+    .thirdSection__figureWrapper{
+        flex-wrap: wrap;
+        max-height: 100%;
+        gap: 5rem;
+    }
+    .gamebox__sorten{
+        background-color:white;
+        box-shadow: none;
+        margin-top: 8rem;
+        margin-left: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 10rem;
+        border: none;
+    }
+    .gamebox__sorten__figureWrapper{
+        flex-direction: column;
+        max-height: 100%;
+        margin-right:80rem;
+        width: 40%;
+        margin-bottom: 27rem;
+        gap: 10rem;
+    }
+    .gamebox__sorten__itemWrapper{
+            flex-direction:column;
+            max-height: 100%;
+            
+    }
+    .header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .header__searchbar{
+        display: none;
+    }
+    .firstSection__text{
+        margin-top: 20rem;
+        margin-right: 18rem;
+    }
+}

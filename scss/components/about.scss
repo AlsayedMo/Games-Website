@@ -1,0 +1,70 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../abstracts/reset";
+
+.about {
+    width: 100%;
+    height: 50rem;
+    padding: 6.25rem 0rem;
+    background-color: #04293A;
+}
+
+.about img {
+    height: auto;
+    width: 26.875rem;
+    box-shadow: 1px 1px 10px 1px white;
+}   
+
+.about-text {
+    width: 34.375rem;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 4.6875rem;
+    text-transform: capitalize;
+    margin-bottom: 1.25rem;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 0.125rem;
+    font-size: 1.375rem;
+    margin-bottom: 1.5625rem;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: rgba(244, 207, 244, 0.8);
+    letter-spacing: 0.0625rem;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    margin-bottom: 2.8125rem;
+}
+
+.talk {
+    background-color: #1ed2f1;
+    color: rgb(4, 3, 3);
+    text-decoration: none;
+    border: 0.125rem solid transparent;
+    font-size: bold;
+    padding: 0.8125rem 1.875rem;
+    border-radius: 1.875rem;
+    transition: .4s;
+}
+
+.talk:hover {
+    background-color: transparent;
+    border: 0.125rem solid #1ed2f1;
+    cursor: pointer;
+}

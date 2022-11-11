@@ -1,0 +1,299 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../abstracts/reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    gap: 1.3rem;
+    padding: 1.2rem;
+    font-family: map-get(variables.$fontVars, "cursive");
+    box-shadow: 0 0.2rem 0.2rem rgb(208, 208, 207);
+    list-style: none;
+
+    &__logo {
+        width: 8.5rem;
+        list-style: none;
+    }
+
+    &__textItem {
+        font-size: 2rem;
+        white-space: nowrap;
+
+
+        &:hover {
+            color: #37363a;
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+            color: #0E7A0D;
+        }
+    }
+
+    &__searchbar {
+        background-color: darken(rgb(198, 195, 195), 3%);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-width: 50%;
+        padding: 1.2rem;
+        border-radius: 10rem;
+        gap: 1.2rem;
+        box-shadow: 0 0 0.2rem 0 #000000;
+        border: 0.1rem solid black;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__searchbarInput {
+        border: none;
+        background-color: darken(rgb(198, 195, 195), 3%);
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.5rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        color: rgb(3, 3, 3);
+        font-weight: 800;
+    }
+
+    &__shoppingCart {
+        font-size: 155%;
+
+        &:hover {
+            color: green;
+            transition: 0.3s;
+            transform: scale(1.1);
+
+        }
+    }
+
+    &__iconCart {
+        font-size: 130%;
+    }
+
+    &__iconGlobe {
+        font-size: 190%;
+        background: #fff;
+        border: 1px solid #000000;
+        padding: 0 1.3rem;
+        height: 4rem;
+        @include mixins.flexCenter;
+        border-radius: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: green;
+            transition: 0.3s;
+            transform: scale(1.1);
+            box-shadow: 0 0 1rem 0 green;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 1.4rem;
+    }
+
+    &__login {
+        text-align: center;
+        text-decoration: none;
+        background: white;
+        border: 0.1rem solid #000000;
+        padding: 0 1.4rem;
+        height: 4rem;
+        font-weight: 600;
+        border-radius: 1rem;
+        @include mixins.flexCenter;
+
+        &:hover {
+            background: yellow;
+            cursor: pointer;
+            transition: 0.3s;
+            transform: scale(1.1);
+            box-shadow: 0 0 1rem 0 yellow;
+        }
+    }
+
+    &__signIn {
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background: #202020;
+        border: 1px solid black;
+        padding: 0 1.4rem;
+        height: 4rem;
+        font-weight: 600;
+        @include mixins.flexCenter;
+        border-radius: 1rem;
+
+        &:hover {
+            background: darkred;
+            cursor: pointer;
+            transition: 0.3s;
+            transform: scale(1.1);
+            box-shadow: 0 0 1rem 0 darkred;
+        }
+    }
+
+}
+
+.container {
+    max-width: 170rem;
+    margin: auto;
+}
+
+.footer {
+    background-color: #202020;
+    padding: 7rem 0;
+
+    &__ul {
+        list-style: none;
+    }
+
+    &__col {
+        width: 25%;
+        padding: 0 1.5rem;
+    }
+
+    &__h4 {
+        font-size: 3rem;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 5rem;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 500;
+        position: relative;
+    }
+
+    &__h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        background-color: #0E7A0D;
+        height: 0.2rem;
+        box-sizing: border-box;
+        width: 5rem;
+    }
+
+    &__ul>li:not(:last-child) {
+        margin-bottom: 1rem;
+
+    }
+
+    &__ul>li>a {
+        font-size: 1.9rem;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-family: 'Dosis', sans-serif;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    &__ul>li>a:hover {
+        color: #fff;
+        margin-left: 1rem;
+
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language__selectotr {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: 0rem;
+    margin-left: 175rem;
+    margin-top: 0rem;
+    order: 1;
+    padding-bottom: 2.4rem;
+
+
+}
+.icon__button{
+    padding: 1rem;
+}
+
+.language__button{
+     
+    align-items: center;
+        background-color: rgb(0, 0, 0, 0);
+        background-image: none;
+        border-bottom-color: rgb(255, 255, 255);
+        border-bottom-style: solid;
+        list-style: none;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(255, 255, 255);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-color: rgb(255, 255, 255);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-top-color: rgb(255, 255, 255);
+        border-top-style: solid;
+        border-top-width: 1px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 400;
+        height: 40px;
+        justify-content: flex-start;
+        line-height: 22.4px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        min-width: 140px;
+        padding-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 0px;
+        position: relative;
+        user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap
+}
+.end__text{
+    font-weight: 200;
+    margin-left: 1.7rem;
+}
+.language__selectotr > i {
+    color:#0E7A0D;
+    margin-bottom: 1.2rem;
+    font-size: 5rem;
+    margin-left: 3.9rem;
+}
+@media only screen and (max-width: 60rem) {
+   .footer__col{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 5rem;
+    }
+
+    
+}

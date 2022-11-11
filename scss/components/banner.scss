@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.firstSection {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+    &__section {
+        display: flex;
+        justify-content: center;
+        max-width: 140rem;
+        margin-bottom: 4.8rem;
+
+    }
+
+    &__banner {
+        width: 130rem;
+        padding-top: 11rem;
+        padding-left: 8rem;
+        margin-bottom: 0;
+        @include mixins.flexCenter;
+    }
+
+    &__text {
+        position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+        padding: 2.4rem;
+        left: 10rem;
+        top: 22rem;
+        max-width: 40rem;
+        flex-direction: column;
+        @include mixins.flexCenter;
+        background-color: #0E7A0D;
+    }
+
+
+    &__h2 {
+        font-size: 3.2rem;
+        font-family: map-get(variables.$fontVars, 'fancyFont');
+
+    }
+
+    &__p {
+        font-size: 1.9rem;
+        font-family: map-get(variables.$fontVars, 'SansFont');
+
+    }
+}

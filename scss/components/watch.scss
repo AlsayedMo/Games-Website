@@ -1,0 +1,232 @@
+@use '../abstracts/variables';
+
+
+.about2 {
+    width: 100%;
+    height: 50rem;
+    padding: 6.25rem 0rem;
+   
+}
+
+.about2 img {
+    max-height: auto;
+    width: 40% ;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 10px 1px white;
+}   
+
+.about-text2 {
+    width: 34.375rem;
+}
+
+.main2__about{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-text2 h2 {
+    color: rgb(3, 39, 139);
+    font-size: 4.6875rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-text2 h5 {
+    color: rgb(209, 118, 15);
+    letter-spacing: 0.125rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.5625rem;
+    
+}
+.about-text2 li {
+    color: rgb(1, 0, 1);
+    letter-spacing: 0.0625rem;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.8125rem;
+}
+
+.talk2 {
+    background-color: #d5550c;
+    color: black;
+    text-decoration: none;
+    border: 0.125rem solid transparent;
+    font-size: bold;
+    padding: 0.8125rem 1.875rem;
+    border-radius: 1.875rem;
+    margin-bottom: 20rem;
+}
+
+.talk2:hover {
+    background-color: transparent;
+    border: 0.125rem solid #0046eb;
+    cursor: pointer;
+}
+
+
+
+----------------
+
+
+
+
+
+
+
+
+
+
+
+.about {
+    width: 100%;
+    height: 50rem;
+    padding: 6.25rem 0rem;
+   
+}
+
+.about img {
+    height: auto;
+    width: 40% ;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 10px 1px white;
+}   
+
+.about-text {
+    width: 34.375rem;
+}
+
+.main__about{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-text h2 {
+    color: rgb(3, 139, 10);
+    font-size: 4.6875rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-text h5 {
+    color: rgb(209, 118, 15);
+    letter-spacing: 0.125rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.5625rem;
+}
+.about-text li {
+    color: rgb(1, 0, 1);
+    letter-spacing: 0.0625rem;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.8125rem;
+}
+
+.talk {
+    background-color: #d5550c;
+    color: black;
+    text-decoration: none;
+    border: 0.125rem solid transparent;
+    font-size: bold;
+    padding: 0.8125rem 1.875rem;
+    border-radius: 1.875rem;
+    margin-bottom: 20rem;
+}
+
+.talk:hover {
+    background-color: transparent;
+    border: 0.125rem solid #0046eb;
+    cursor: pointer;
+}
+
+
+
+
+
+-------------------
+
+
+
+
+.about3 {
+    width: 100%;
+    height: 50rem;
+    padding: 6.25rem 0rem;
+    
+}
+
+.about3 img {
+    height: auto;
+    width: 28% ;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 10px 1px white;
+}   
+
+.about-text3 {
+    width: 34.375rem;
+    margin-top: 12rem;
+}
+
+.main__about3{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-text3 h2 {
+    color: rgb(242, 235, 27);
+    font-size: 4.6875rem;
+    text-transform: capitalize;
+    margin-bottom: 1.25rem;
+    background-color: #d5550c;
+    padding: 1rem;
+}
+
+.about-text3 h5 {
+    color: rgb(209, 118, 15);
+    letter-spacing: 0.125rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+.about-text3 li {
+    color: rgb(1, 0, 1);
+    letter-spacing: 0.0625rem;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.8rem;
+}
+
+.talk3 {
+    background-color: #e7e30f;
+    color: black;
+    text-decoration: none;
+    border: 0.125rem solid transparent;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 1.8rem;
+    margin-bottom: 20rem;
+}
+
+.talk3:hover {
+    background-color: transparent;
+    border: 0.1rem solid #0046eb;
+    cursor: pointer;
+}
+
+
+
+
